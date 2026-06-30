@@ -5,6 +5,7 @@
 package prestamos;
 
 import java.time.LocalDate;
+import materiales.Materiales;
 
 /**
  *
@@ -12,14 +13,14 @@ import java.time.LocalDate;
  */
 public class Prestamo {
     private Usuario usuario;
-    private Material material;
+    private Materiales material;
     private LocalDate fechaPrestamo;
     private LocalDate fechaMax;
     private LocalDate fechaDevolucion;
     private boolean estaAtrasado;
     private String diasAtrasado;
 
-    public Prestamo(Usuario usuario, Material material, LocalDate fechaPrestamo, LocalDate fechaMax, LocalDate fechaDevolucion, boolean estaAtrasado, int diasAtrasado) {
+    public Prestamo(Usuario usuario, Materiales material, LocalDate fechaPrestamo, LocalDate fechaMax, LocalDate fechaDevolucion, boolean estaAtrasado, int diasAtrasado) {
         this.usuario = usuario;
         this.material = material;
         this.fechaPrestamo = fechaPrestamo;
@@ -33,7 +34,7 @@ public class Prestamo {
         return usuario;
     }
 
-    public Material getMaterial() {
+    public Material getMaterials() {
         return material;
     }
 
@@ -63,7 +64,7 @@ public class Prestamo {
         this.usuario = usuario;
     }
 
-    public void setMaterial(Material material) {
+    public void setMaterial(Materiales material) {
         this.material = material;
     }
 
