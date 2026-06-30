@@ -50,4 +50,6 @@ public class Libro extends Materiales {
     public String verificarEspacio(String cantTotal){
       return cantTotal;  
     }
+
+    
 }

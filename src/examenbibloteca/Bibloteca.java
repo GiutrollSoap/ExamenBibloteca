@@ -16,6 +16,8 @@ public class Bibloteca {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        
         System.out.println("====Lectura Viva====");
         System.out.println("¿Que acción desea realizar");
         System.out.println("1_Ingresar Usuario");
@@ -23,10 +25,10 @@ public class Bibloteca {
         System.out.println("3_Ingresar Recurso Digital");
         System.out.println("4_Prestamo de Materiales");
         System.out.println("5_Consulta de Actividades");
-    }
+    
     Scanner teclado= new Scanner(System.in);
     
-    public String calificarOpcion(teclado){
+  
     switch
             case 1:
                 (ingresar usuario)
