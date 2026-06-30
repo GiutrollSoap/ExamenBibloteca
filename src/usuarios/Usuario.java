@@ -34,7 +34,7 @@ public abstract class Usuario {
     public void setDireccion(String direccion) { this.direccion = direccion; }
 
   
-    public boolean esMayorDeEdad() {
+    public boolean MayorDeEdad() {
        if (this.fechaNacimiento != null) {
          int edad = Period.between(this.fechaNacimiento, LocalDate.now()).getYears();
           System.out.println("edad calcualda: " + edad + " años");
