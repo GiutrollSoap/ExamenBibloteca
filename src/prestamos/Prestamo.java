@@ -6,6 +6,7 @@ package prestamos;
 
 import java.time.LocalDate;
 import materiales.Materiales;
+import usuarios.Usuario;
 
 /**
  *
@@ -34,7 +35,7 @@ public class Prestamo {
         return usuario;
     }
 
-    public Material getMaterials() {
+    public Materiales getMaterials() {
         return material;
     }
 
