@@ -12,58 +12,70 @@ import java.time.LocalDate;
  */
 public abstract class Materiales {
     private String codigo;
-    private LocalDate Cumpleaños;
-    private String telefono;
-    private String correo;
-    private String dirección;
+    private String título;
+    private String autor;
+    private LocalDate fechaPublicación;
+    private int categoria;
+    private String disponibilidad;
 
-    public Materiales(String codigo, LocalDate Cumpleaños, String telefono, String correo, String dirección) {
+    public Materiales(String codigo, String título, String autor, LocalDate fechaPublicación, int categoria, String disponibilidad) {
         this.codigo = codigo;
-        this.Cumpleaños = Cumpleaños;
-        this.telefono = telefono;
-        this.correo = correo;
-        this.dirección = dirección;
+        this.título = título;
+        this.autor = autor;
+        this.fechaPublicación = fechaPublicación;
+        this.categoria = categoria;
+        this.disponibilidad = disponibilidad;
     }
 
     public String getCodigo() {
         return codigo;
     }
 
-    public LocalDate getCumpleaños() {
-        return Cumpleaños;
+    public String getTítulo() {
+        return título;
     }
 
-    public String getTelefono() {
-        return telefono;
+    public String getAutor() {
+        return autor;
     }
 
-    public String getCorreo() {
-        return correo;
+    public LocalDate getFechaPublicación() {
+        return fechaPublicación;
     }
 
-    public String getDirección() {
-        return dirección;
+    public int getCategoria() {
+        return categoria;
+    }
+
+    public String getDisponibilidad() {
+        return disponibilidad;
     }
 
     public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
 
-    public void setCumpleaños(LocalDate Cumpleaños) {
-        this.Cumpleaños = Cumpleaños;
+    public void setTítulo(String título) {
+        this.título = título;
     }
 
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
+    public void setAutor(String autor) {
+        this.autor = autor;
     }
 
-    public void setCorreo(String correo) {
-        this.correo = correo;
+    public void setFechaPublicación(LocalDate fechaPublicación) {
+        this.fechaPublicación = fechaPublicación;
     }
 
-    public void setDirección(String dirección) {
-        this.dirección = dirección;
+    public void setCategoria(int categoria) {
+        this.categoria = categoria;
     }
+
+    public void setDisponibilidad(String disponibilidad) {
+        this.disponibilidad = disponibilidad;
+    }
+
+  
     
     
 }
