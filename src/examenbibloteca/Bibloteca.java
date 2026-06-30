@@ -29,10 +29,11 @@ public class Bibloteca {
     Scanner teclado= new Scanner(System.in);
     
   
-    switch
-            case 1:
-                (ingresar usuario)
-                        case 2:
-                            
+    switch(teclado){
+        case 1:
+            
+            
+        
+    }
     }
 }
